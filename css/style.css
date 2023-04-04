@@ -1,0 +1,726 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  size: 100%;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+}
+
+body.home {
+  height: 100%;
+  background-image: url("/background image/pexels-asba-drums-7858663.jpg");
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: center;
+}
+
+body.register {
+  background-image: url("/background image/closeup-drumsticks-blurred-background.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+
+
+body.gallery {  
+  width: 100%;
+  background-image: url("/background image/part-drum-kit-dark-with-beautiful-lighting-concert-performance-concept.jpg");
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+body.media {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+
+}
+
+input::placeholder {
+  opacity: 0.4;
+}
+
+input[type=text]:focus,
+select {
+  width: auto;
+  padding: 6px 6px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+input[type=password]:focus,
+select {
+  width: auto;
+  padding: 6px 6px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: larger;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid black;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+  opacity: 0.7;
+  transform: scale(1.01) perspective(1px)
+}
+
+label {
+  color: white;
+}
+
+
+table {
+  align-self: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  padding: 3px;
+}
+
+a:visited {
+  color: #73AD21;
+  margin: 0;
+  padding: 0;
+}
+
+a:active {
+  color:   #73AD21;
+  opacity: 0.6;
+}
+
+
+/*-----------------------------------------------------------------------------------------IMAGES-----------------------------------------------------------------------------------------------------*/
+.img1 {
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  align-content: center;
+  position: relative;
+
+}
+
+.profile-img {
+  width: 40%;
+  height: auto;
+  transition: all .5s;
+  opacity: 0.8;
+}
+
+.profile-img:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+
+/*-----------------------------------------------------------------------------------------FONT SIZE-----------------------------------------------------------------------------------------------------*/
+.hr1 {
+  border: 0;
+  border-top: 1px solid black;
+  size: 100%;
+  padding: 0;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.p1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  color: white;
+}
+
+p {
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*-----------------------------------------------------------------------------------------CONTAINERS-----------------------------------------------------------------------------------------------------*/
+.top-container {
+  /*background-color: aqua;*/
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.page-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.3rem;
+  font-weight: bold;
+}
+
+.middle-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  text-align: center;
+}
+
+.pic-cont {
+  width: 100%;
+  height: auto;
+  position: relative;
+  
+}
+
+.greeting {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  padding:3%;
+}
+.bio-container {
+  position: relative;
+  width: 100%;
+  padding: 3% 6%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bio-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.skill-text-cont {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 3% 6%;
+}
+
+.skill-title {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  padding:3%;
+}
+
+.services-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: white;
+  font-family: 'Roboto', sans-serif; 
+}
+
+/*
+.interest-container {
+  background-color: #73AD21;
+  display: flex;
+  position: relative;
+  width: 100%;
+  text-align: center;
+} 
+*/
+
+
+.skill-column {
+  flex: 25%;
+}
+
+.skill-img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+
+
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.img-overlay:hover>* {
+  transform: translateY(0px);
+}
+
+.img-overlay>* {
+  transform: translateY(0.5em);
+  transform: transform .2s;
+}
+
+.image-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.image-description {
+  font-size: 1.2vw;
+  margin-top: 0.25em;
+}
+
+
+
+/*=======================================================INTERESTS=================================================*/
+
+
+.contenedor {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+}
+
+.columna {
+  flex: 25%;
+}
+
+.skill-row {
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .2s;
+
+}
+
+.test {
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+
+.imagen {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.test-text {
+  position: relative;
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  top: 0;
+  left: 0;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 950px) {
+  .test-text{
+    font-size: 2vh;
+  }
+  
+}
+
+.test-description {
+  color: white;
+  font-size: calc(1px + 1vw);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*---------------------------------------------------------------------------contact-----------------------------------------------*/
+.contact-container {
+  size: 100%;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.contact-title {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.contact-description {
+  color: white;
+  line-height: 1.5;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  
+}
+
+.contact-button {
+  width: 100%;
+  padding: 2%;
+}
+
+.button-text {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding: 2%;
+  opacity: 0.8;
+  transition: all .2s ease-in-out;
+}
+
+.button-text:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/*================================================SOCIAL MEDIA====================================================*/
+.sm-container {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.sm-title {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+
+.sm-link {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width:110px;
+  height: auto;
+}
+
+.sm-icon {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 30%;
+  transition: all .1s ease-in;
+  opacity: 0.7;
+}
+.sm-icon:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+/*.footer-link-text {
+  color: #73AD21;
+  font-size: 1.2em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.7;
+  transition: opacity .25s ease;
+}
+.footer-link-text:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}*/
+
+/*-----------------------------------------------------------------------------------------MISC-----------------------------------------------------------------------------------------------------*/
+.footer-copy {
+  position: absolute;
+
+}
+
+.copyright1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 5%;
+  position: static;
+  text-align: center;
+  color: white;
+  bottom: 0px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8vw;
+
+}
+
+.copyright2 {
+  position: fixed;
+  text-align: center;
+  color: #ccc;
+  bottom: 0px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: fit-content;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: bold;
+  padding: 2% 2%;
+  border-radius: 6px;
+  position:absolute;
+  z-index: 1;
+  left: 65%;
+  bottom: -30%;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------REGISTRATION------------------------------------------------------------------------------------------------*/
+
+.register-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 7%;
+  width: 70%;
+  display: table;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.register-row {
+  padding: 5px;
+
+}
+
+.register-row1 {
+  padding: 5px;
+  text-align: center;
+}
+
+/*=====================================================PHOTO GALLERY=============================================*/
+.ph-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center; 
+}
+
+.ph-text {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding: 0;
+  opacity: 0.8;
+  transition: all .2s ease-in-out;
+}
+
+.ph-text:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.title-container {
+  margin: auto;
+  padding: 30px;
+  /*background-color: blue;*/
+}
+
+.gallery-title {
+  font-size: 3rem;
+}
+.gallery-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.ph-col {
+  width: 33.33%;
+  height: auto;
+  display: flex;
+}
+
+
+.ph-img {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-left: 3%;
+  padding-right: 3%;
+  transition: all .2s ease-in-out;
+  opacity: 0.75;
+}
+
+.ph-img:hover {
+  transform: scale(1.125);
+  opacity: 1;
+}
+
+
+/*============================================MEDIA===========================================*/
+
+.media-link {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.media-title {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding: 2%;
+  opacity: 0.8;
+  transition: all .2s ease-in-out;
+}
+
+.media-title:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.media-header {
+
+  width: 100%;
+  position: relative;
+  padding: 4% 0;
+  font-size: 1.5em;
+}
+
+.media-text-title {
+  font-size: 3rem;
+}
+
+.media-text {
+  font-size: 2rem;
+  font-family: cursive;
+  font-weight: bold;
+
+}
+
+
+
+.media-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5% ;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow:hidden;
+}
+
+.media-col {
+  position:relative;
+  width: 33.33%;  
+}
+
+.video1 {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 400px;
+  height: auto;
+}
+
